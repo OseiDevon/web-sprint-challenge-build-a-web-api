@@ -32,9 +32,9 @@ const PORT = process.env.PORT || 5000
 
 server.use(express.json())
 
-server.use(cors())
+// server.use(cors())
 
-server.use('*', (req, res, next) => {
+server.use('*', (req, res, next) => {//eslint-disable-line
   res.send(`<h1>Hello, there!</h1>`)
 })
 
